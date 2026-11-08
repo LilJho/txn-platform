@@ -1,0 +1,31 @@
+# 1. Python bytecode / build output
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# 2. Virtual environment
+.venv/
+
+# 3. Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# 4. Secrets (exact name, so .env.example can still be committed)
+.env
+
+# 5. Data: keep the folders, ignore the contents
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.parquet
+
+# 6. Editor / OS
+.DS_Store
+.vscode/
